@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt, initial-scale=1.0">
+    <title>register</title>
+</head>
+<style>
+   
+    table,td,th{
+        border:3px solid blue ;
+       
+    }
+    td,th{
+        background-color: aqua;
+    }
+   
+    h1{
+        text-transform: uppercase;
+    }
+    a{
+        padding-left:80px;
+        float:left;
+        text-decoration: none;
+        background-color:skyblue;
+        width:70px;
+        padding:20px 40px;
+        font-size:20px;
+        padding-right:;
+
+        
+    }
+    .l{
+        float:right;
+    }
+    a:hover{
+       background:pink;
+        font-size: large;
+    }
+
+    
+   
+
+    </style>
+<body>
+    <center>
+        <img src="logo.png">
+        </center>
+        <h1 style="text-align: center;">thiagarajar college of engineering</h1>
+        <center>
+            <div class="l">  
+        <a href="home.html">HOME</a>
+        
+        <a href="about.html">ABOUT</a>
+        
+        <a href="contact.html">CONTACT</a>
+        <a href="register.html">REGISTER</a>
+        
+           
+                <a href="input.html">LOGOUT</a>
+            
+            </div>
+        <br><br>
+        <img src="tce.jpeg" style="height: 50%;width:100%;">
+        </center>
+    
+    <center>
+        <h1>registeration form</h1><br><br><br>
+    <table>
+        <tr>
+            <th>NAME:</th>
+            <td><input type="text" id="user" required></td>
+        </tr>
+        <tr>
+            <th>AGE:</th>
+            <td><input type="number" id="age" required></td>
+            </tr>
+            <tr>
+                <th>
+                    DOB:
+                </th>
+                <td>
+                    <input type="date" id="dob" required>
+                </td>
+            </tr>
+            <tr>
+                <th>MOBILE NO:</th>
+                <td><input type="number" id="mobile" required></td>
+                </tr>
+                <tr>
+                    <th>EMAIL:</th>
+                    <td><input type="email" id="mail" required></td>
+                    </tr>
+                <tr>
+                    <th>CERTIFICATE:</th>
+                    <td><input type="file" id="docu" required></td>
+                    </tr>
+                    <tr>
+                        <th>GENDER:</th>
+                        <td><input type="radio" name="GENDER">MALE
+                            <input type="radio" name="GENDER">FEMALE</td>
+                        </tr>
+                        <tr>
+                            <th>BRANCH:</th>
+                            <td>
+                            <select>
+                                <option>CSE</option>
+                                <option>IT</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>MECH</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <th>ADDRESS:</th>
+                                <td><textarea rows="5" cols="25"></textarea></td>
+                                </tr>
+                                <td colspan="2" align="center"><input type="checkbox">i accept all this terms</td>
+                        <tr>
+                           <td> <input type="submit" onclick="func()" value="submit"></td></tr>
+        </table>
+        </center>
+        <script>
+           
+         function func(){
+         var a=document.getElementById('user').value;
+         var b=document.getElementById('age').value;
+         var c=document.getElementById('dob').value;
+         var d=document.getElementById('mobile').value;
+         var e=document.getElementById('mail').value;
+         var f=document.getElementById('docu').value;
+         if(a==="" || !isNaN(a)){
+            alert("enter your name in variable form!");
+         }
+         else if(b==="")
+               {
+                alert("enter your age!");
+               }
+        else if(c===""){
+            alert("enter your date of birth!");
+        }
+        else if(d===""){
+            alert("enter your mobile number!");
+        }
+        else if(e===""){
+            alert("enter your mail!");
+        }
+        else if(f===""){
+            alert("upload your file!");
+        }
+        else{
+            alert("submitted successfully!");
+        }
+            }
+            </script>
+    
+</body>
+</html>
